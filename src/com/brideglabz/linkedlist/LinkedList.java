@@ -1,6 +1,7 @@
 package com.brideglabz.linkedlist;
 
 public class LinkedList <T>{
+
     Node<T> head;
     Node<T> tail;
     public void add(T data) {

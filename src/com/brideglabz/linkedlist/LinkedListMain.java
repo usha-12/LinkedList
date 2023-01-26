@@ -13,6 +13,12 @@ public class LinkedListMain {
         System.out.println("\nDeleting 40 from the Linked List.");
         list1.popMiddle(40);
         list1.print();
+        System.out.println("--------Add data in Linked List--------");
+        LinkedList<Integer> list2 = new LinkedList<>();
+        list2.popMiddle(70);
+        list2.popMiddle(30);
+        list2.popMiddle(56);
+        list2.print();
     }
 }
 /*Ability to delete 40 from the Linked
