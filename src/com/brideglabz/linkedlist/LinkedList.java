@@ -13,21 +13,16 @@ public class LinkedList <T>{
             tail = newNode;
         }
     }
-    public T popLast(T element) {
-        Node<T> newNode = new Node(element);
-        if (head == null)
-            return null;
-        else {
-            Node<T> temp = head;
-            while (temp.getNext() != tail) {
-                temp = (Node<T>) temp.getNext();
+    public void search(T element) {
+        Node<T> currNode = head;
+        while (currNode != null) {
+            if (currNode.getData().equals(element)) {
+                System.out.println("\nFound element " + element + " in the Linked List!");
+                currNode = (Node<T>) currNode.getNext();
             }
-            T data = tail.getData();
-            temp.setNext(null);
-            tail = temp;
-            return data;
         }
     }
+
     public void print(){
         if (head == null){
             System.out.println("Linked List is Empty");
@@ -38,6 +33,6 @@ public class LinkedList <T>{
                 currNode = currNode.getNext();
             }
             System.out.println();
-        }
+       }
     }
 }
