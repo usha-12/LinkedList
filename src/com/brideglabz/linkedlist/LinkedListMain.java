@@ -9,19 +9,19 @@ public class LinkedListMain {
             list1.add(30);
             list1.add(56);
             list1.print();
-            System.out.println("--------Add data in Linked List---------");
+            System.out.println("--------Ability to create Linked List by appending 30 and 70 to 56---------");
             LinkedList<Integer> list2 = new LinkedList<>();
             list2.push(70);
             list2.push(30);
             list2.push(56);
             list2.print();
-        }
+    }
     }
 
 /*Ability to create Linked
-List by adding 30 and 56
-to 70
-- Node with data 70 is First Created
-- Next 30 is added to 70
-- Finally 56 is added to 30
+List by appending 30 and
+70 to 56
+- Node with data 56 is First Created
+- Next Append 30 to 56
+- Finally Append 70 to 30
 - LinkedList Sequence: 56->30->70*/
